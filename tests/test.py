@@ -1,3 +1,3 @@
-from src.choise_text import random_choise_compliment
+from src.choise_text import random_compliment
 
-print(random_choise_compliment())
+print(random_compliment())
