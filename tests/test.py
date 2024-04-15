@@ -1,5 +1,6 @@
-from src.choise_text import random_compliment, random_phrases, random_motivation
 from src.choise_function import random_function
+from src.choise_text import (random_compliment, random_motivation,
+                             random_phrases)
 
 # print(random_compliment())
 # print()
