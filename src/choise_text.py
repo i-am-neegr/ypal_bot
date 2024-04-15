@@ -32,3 +32,8 @@ def random_motivation(path_for_motivation: str = "C:\\Users\\Student Free\\Pycha
     return "\n".join(choice(list_phrases))
 
 
+def random_function(list_function: list = (random_compliment, random_motivation,
+                                           random_phrases)) -> str:
+    """берет случайную функцию """
+    function = choice(list_function)
+    return function()
