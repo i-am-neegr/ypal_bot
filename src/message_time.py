@@ -1,5 +1,5 @@
 import random
-from datetime import time, datetime
+from datetime import datetime, time
 
 
 def morning_random_moment(start_time: str, end_time: str) -> time:
@@ -10,7 +10,7 @@ def morning_random_moment(start_time: str, end_time: str) -> time:
     end_time = time(int(end_hours), int(end_minutes), 0)
 
     random_hour = random.randint(start_time.hour, end_time.hour)
-    random_minute = random.randint(0, 59)
+    random_minute = random.randint(start_time.minute, end_time.minute)
     random_second = random.randint(0, 59)
     random_microsecond = random.randint(0, 999999)
 
@@ -40,5 +40,3 @@ def is_valid_message_time(sending_time: time) -> bool:
     sending_time = str(sending_time.strftime('%H:%M'))
     current_time = str(datetime.now().strftime('%H:%M'))
     return current_time == sending_time
-
-
