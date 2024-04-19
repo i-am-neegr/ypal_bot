@@ -1,4 +1,4 @@
-from src.message_time import morning_random_moment, evening_random_moment
+from src.message_time import random_moment
 from aiogram import Bot, Dispatcher
 import asyncio
 
